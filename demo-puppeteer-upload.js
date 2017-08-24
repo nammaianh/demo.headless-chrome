@@ -27,7 +27,9 @@ puppeteer.launch(BROWSER_OPTIONS).then(async browserInstance => {
   await page.setViewport(VIEWPORT)
 
   try {
-    await page.goto('http://www.aconvert.com/image/')
+    await page.goto('http://www.aconvert.com/image/', {
+      timeout: 120000 // 2 minutes
+    })
     console.log('-> Entered the page')
 
     const formatSelector = await page.$('#targetformat')
