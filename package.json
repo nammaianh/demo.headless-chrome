@@ -10,8 +10,6 @@
   "author": "Mai Anh Nam <nammaianh@hotmail.com>",
   "license": "ISC",
   "dependencies": {
-    "chrome-launcher": "^0.6.0",
-    "chrome-remote-interface": "^0.24.4",
     "puppeteer": "^0.9.0"
   }
 }
